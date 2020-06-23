@@ -25,7 +25,7 @@ public class BlogPostController {
 
     private BlogPost blogPost;
 
-    @PostMapping
+    @PostMapping(value = "/blogposts")
     public String addNewBlogPost(BlogPost blogPost, Model model){
         blogPostRepository.save(new BlogPost(blogPost.getTitle(), blogPost.getAuthor(), blogPost.getBlogEntry()));
         model.addAttribute("title", blogPost.getTitle());
