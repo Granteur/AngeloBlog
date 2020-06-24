@@ -10,8 +10,9 @@
     </head>
     
     <body>
-        <div th:replace="/BlogPost/navbar :: navbarre"></div>
+        
         <div class="container">
+            <div th:replace="/BlogPost/navbar :: navbarre"></div>
             <div class="row">
                 <p>Use the form below to submit a blog post:</p>
                 <form action="#" th:action="@{/blogposts}" th:object="${blogPost}" method="POST">

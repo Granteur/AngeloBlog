@@ -7,15 +7,15 @@
     <div th:replace="/fragments/styling :: head-style"></div>
 </head>
   <body>
-    <div th:replace="/BlogPost/navbar :: navbarre"></div>
     <div class="container">
+        <div th:replace="/BlogPost/navbar :: navbarre"></div>
         <div class="row">
             <div class="col-md">
                 <h1>Welcome to my Blog Site!</h1>
                 <h3>Check out our blogs!</h3>
             </div>
         </div>
-    </div>
+    
 
     <div class="row">
         <div th:each="blog:${posts}">
@@ -38,6 +38,7 @@
                 <button class="btn btn-primary">Submit A New Blog Post</button>
             </a>
         </div>
+    </div>
     </div>
 
     <div th:replace="/fragments/styling :: body-links"></div>
