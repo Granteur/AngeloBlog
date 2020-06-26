@@ -18,6 +18,10 @@ public class BlogPost {
         //non argument constructor for JPA
     }
 
+    public Long getId(){
+        return id;
+    }
+
     public BlogPost(String title, String author, String blogEntry){
         this.title = title;
         this.author = author;

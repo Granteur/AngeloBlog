@@ -27,6 +27,9 @@
                         <p th:text="${blog.blogEntry}"></p>
                     </div>
                     <div class="card-footer"></div>
+                    <a href="#" th:href="@{blogposts/{id}(id=${}blog.id})}">
+                        <button class="btn btn-secondary">Edit this Post</button>
+                    </a>
                 </div><!-- End of .card -->
             </div><!-- End of .col-sm -->
         </div><!-- End of posts loop -->
